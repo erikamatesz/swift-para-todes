@@ -1,6 +1,6 @@
 # Swift para Todes - Programando em Swift no Ubuntu
 
-Este tutorial foi feito como um complemento para a palestra ministrada no IWD'19. Qualquer dúvida, entre em contato comigo via [e-mail](mailto:erbuen@protonmail.com) ou [Telegram](http://t.me/erbuen) :)
+Este tutorial foi feito por mim, Erika Bueno, como um complemento para a palestra ministrada no IWD'19. Qualquer dúvida, entre em contato comigo via [e-mail](mailto:erbuen@protonmail.com) ou [Telegram](http://t.me/erbuen) :)
 
 ## Preparação
 
@@ -20,7 +20,7 @@ Siga os passos desta seção caso possua um computador com Windows ou com alguma
 
 1. Acesse www.ubuntu.com e clique em “Download”.
 2. Na seção “Ubuntu Desktop”, clique em “18.04 LTS”. O download deve se iniciar automaticamente (aprox. 2 GB), caso isso não ocorra, clique em “download now” na tela de agradecimento.
-3. 
+
 ### Etapa 3 - Rodando o Ubuntu no VirtualBox
 
 1. Abra o VirtualBox e na tela inicial (Oracle VM VirtualBox Manager) clique no ícone "New".
@@ -32,7 +32,16 @@ Siga os passos desta seção caso possua um computador com Windows ou com alguma
 7. Na seção "Atualizações e outro software", mantenha as opções que já estão selecionadas ("Instalação normal" e "Baixar atualizações enquanto instala Ubuntu") e clique em "Continuar".
 8. Na seção "Tipo de instalação", mantenha a opção que já está selecionada ("Apagar disco e reinstalar o Ubuntu") e não se preocupe! Apesar do aviso de que isso apagará todos os programas, documentos, etc., lembre-se que você está em uma máquina virtual e isso não afetará em nada o host OS ;) Clique em "Instalar agora" para prosseguir. Aparecerá um aviso na tela "Escrever as mudanças nos discos?", clique em "Continuar".
 9. Na seção "Onde você está?", selecione seu fuso horário e clique em "Continuar". Na seção "Quem é você?", você vai definir seu nome de usuário e senha para logar no Ubuntu. Preencha todos os campos e clique em "Continuar". A instalação vai continuar e o Ubuntu já estará usando a internet do seu computador físico, então é só aguardar! :D
+10. Quando a instalação for concluída, você receberá um aviso informando que o computador precisa ser reiniciado. Clique em "Reiniciar agora" e aguarde: sua máquina virtual rodando Ubuntu está pronta para ser utilizada! \o/ **Importante:** Ao reiniciar, aparecerá uma mensagem "Please remove the installation medium then press enter", apenas aperte o Enter e aguarde. Em alguns instantes a tela para login aparecerá.
+
+### Etapa 4 - Baixando, instalando e configurando o Swift no Ubuntu
+
+1. 
 
 ## Links Interessantes
 
 Oracle VM VirtualBox User Manual - https://www.virtualbox.org/manual/ 
+
+## Sim, pode usar! :)
+
+Você pode utilizar este tutorial à vontade desde que mantenha os créditos (meu nome + meu e-mail) e utilize somente para fins não-comerciais.
