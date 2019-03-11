@@ -8,6 +8,8 @@ Chamaremos de **host OS** o sistema operacional do seu computador físico, onde 
 
 Siga os passos desta seção caso possua um computador com Windows ou com alguma distribuição de Linux diferente do Ubuntu. Estes passos também são úteis caso você esteja usando um Mac e queira experimentar o Ubuntu :)
 
+Se você já está utilizando o Ubuntu, pode ir direto à próxima seção: "Baixando, instalando e configurando o Swift no Ubuntu".
+
 *Dica: Salve os arquivos baixados em um local que você encontrará facilmente.*
 
 ### Etapa 1 - Baixando e instalando o VirtualBox da Oracle
@@ -32,16 +34,55 @@ Siga os passos desta seção caso possua um computador com Windows ou com alguma
 7. Na seção "Atualizações e outro software", mantenha as opções que já estão selecionadas ("Instalação normal" e "Baixar atualizações enquanto instala Ubuntu") e clique em "Continuar".
 8. Na seção "Tipo de instalação", mantenha a opção que já está selecionada ("Apagar disco e reinstalar o Ubuntu") e não se preocupe! Apesar do aviso de que isso apagará todos os programas, documentos, etc., lembre-se que você está em uma máquina virtual e isso não afetará em nada o host OS ;) Clique em "Instalar agora" para prosseguir. Aparecerá um aviso na tela "Escrever as mudanças nos discos?", clique em "Continuar".
 9. Na seção "Onde você está?", selecione seu fuso horário e clique em "Continuar". Na seção "Quem é você?", você vai definir seu nome de usuário e senha para logar no Ubuntu. Preencha todos os campos e clique em "Continuar". A instalação vai continuar e o Ubuntu já estará usando a internet do seu computador físico, então é só aguardar! :D
-10. Quando a instalação for concluída, você receberá um aviso informando que o computador precisa ser reiniciado. Clique em "Reiniciar agora" e aguarde: sua máquina virtual rodando Ubuntu está pronta para ser utilizada! \o/ **Importante:** Ao reiniciar, aparecerá uma mensagem "Please remove the installation medium then press enter", apenas aperte o Enter e aguarde. Em alguns instantes a tela para login aparecerá.
+10. Quando a instalação for concluída, você receberá um aviso informando que o computador precisa ser reiniciado. Clique em "Reiniciar agora" e aguarde: sua máquina virtual rodando Ubuntu está pronta para ser utilizada! \o/ **Importante:** Ao reiniciar, aparecerá uma mensagem "Please remove the installation medium then press enter", apenas aperte o Enter e aguarde. Em alguns instantes a tela para login aparecerá. Na primeira vez que você utiliza o Ubuntu, é possível que ele peça para baixar atualizações então não deixe de fazer isso :)
 
-### Etapa 4 - Baixando, instalando e configurando o Swift no Ubuntu
+## Baixando, instalando e configurando o Swift no Ubuntu
 
-1. 
+Vamos utilizar o Terminal. Para acessá-lo, clique no botão "Mostrar aplicativos" no canto inferior esquerdo da área de trabalho. Você pode rolar a tela até encontrar o Terminal ou pode digitar "terminal" no campo "Digite para pesquisar...".
+
+O primeiro comando que utilizaremos é para instalar as dependências necessárias para o Swift. 
+
+Na sua janela do terminal, você pode ver que o último caractere da linha é o *$* então todos os comandos que estarão neste tutorial deverão ser digitados depois do *$*, ok?
+
+Então, na sua janela do terminal, digite o comando abaixo:
+
+```sh
+$ sudo apt-get install clang libicu-dev -y
+```
+Será necessário digitar a sua senha, a mesma que você utilizou para logar-se no Ubuntu. Faça isso e dê Enter. Os arquivos serão baixados e instalados, pode levar um tempinho.
+
+O próximo comando é para fazer o download do pacote do Swift (aprox. 220 MB): 
+```sh
+$ wget https://swift.org/builds/swift-4.2.3-release/ubuntu1804/swift-4.2.3-RELEASE/swift-4.2.3-RELEASE-ubuntu18.04.tar.gz
+```
+
+Se quiser verificar se o pacote foi baixado corretamente, digite o seguinte comando:
+
+```sh
+$ ls
+```
+
+Este comando mostra todos os arquivos existentes no diretório que você se encontra. Um dos arquivos mostrados deve ser o **swift-4.2.3-RELEASE-ubuntu18.04.tar.gz** :)
+
+Agora precisamos extrair o conteúdo do pacote. Para isso, vamos criar um diretório chamado "swift" e vamos extrair o pacote para dentro dele.
+
+O primeiro comando a ser utilizado é:
+
+```sh
+$ mkdir ~/swift
+```
+
+Se você digitar novamente o comando **ls** após a criação do diretório, vai ver que além do que apareceu anteriormente, há uma pasta "swift" ;)
+
+O próximo comando vai descompactar o conteúdo do pacote para dentro do diretório "swift":
+
+```sh
+$ tar -xvzf swift-4.2.3-RELEASE-ubuntu18.04.tar.gz -C ~/swift
+```
 
 ## Links Interessantes
 
 Oracle VM VirtualBox User Manual - https://www.virtualbox.org/manual/ 
 
 ## Sim, pode usar! :)
-
 Você pode utilizar este tutorial à vontade desde que mantenha os créditos (meu nome + meu e-mail) e utilize somente para fins não-comerciais.
