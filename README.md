@@ -119,6 +119,28 @@ Swift version 4.2.3 (swift-4.2.3-RELEASE)
 Target: x86_64-unknown-linux-gnu
 ```
 
+Agora você pode começar a explorar o Swift no Ubuntu :D 
+
+Para isso, utilize o comando:
+
+```sh
+$ swift
+```
+
+O REPL (Read-Eval-Print Loop) do Swift será inicializado. REPL é um programa bem simples em que você digita expressões da linguagem em questão, ele lê estas expressões ou trechos de código, executa e imprime o resultado caso não haja erros. Em caso de erros de sintaxe, o REPL informa ao usuário na tela.
+
+Teste o REPL digitando o código no arquivo de exemplos deste repositório.
+
+Digite cada linha e pressione o Enter. Em caso de funções (mais de uma linha), digite a primeira linha, pressione Enter, digite a próxima linha, pressione Enter e assim por diante até concluir a entrada da função.
+
+Para sair do REPL, utilize o comando:
+
+```sh
+> :quit
+```
+
+*Note que quando estamos digitando no terminal, o símbolo é **$**, mas quando estamos utilizando o REPL, o símbolo é **>** ;)*
+
 ## Links Interessantes
 
 Oracle VM VirtualBox User Manual - https://www.virtualbox.org/manual/ 
