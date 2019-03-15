@@ -144,6 +144,7 @@ Para sair do REPL, utilize o comando:
 ## Links Interessantes
 
 Oracle VM VirtualBox User Manual - https://www.virtualbox.org/manual/ 
+The Swift Programming Language - https://docs.swift.org/swift-book/ 
 
 ## Sim, pode usar! :)
 Você pode utilizar este tutorial à vontade desde que mantenha os créditos (meu nome + meu e-mail) e utilize somente para fins não-comerciais.
