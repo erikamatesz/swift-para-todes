@@ -141,6 +141,32 @@ Para sair do REPL, utilize o comando:
 
 *Note que quando estamos digitando no terminal, o símbolo é **$**, mas quando estamos utilizando o REPL, o símbolo é **>** ;)*
 
+Outra maneira de explorar o Swift é utilizando o compilador. Para isso, vamos criar um arquivo com a extensão **.swift** utilizando o seguinte comando:
+
+```sh
+$ nano exemplo.swift
+```
+
+Este comando criará o arquivo *exemplo.swift* no diretório atual e também abrirá o editor **GNU nano**. Nele, podemos escrever o código em Swift para depois compilar :)
+
+Na janela do nano, você digita o código (veja os exemplos neste repositório) e, quando terminar, tecle CTRL + X para sair. Como você fez alterações no arquivo, ele perguntará se você deseja salvar antes de sair. Basta digitar Y. Ele confirmará o nome do arquivo e é só pressionar Enter.
+
+Para compilar seu arquivo, utilize o seguinte comando:
+
+```sh
+$ swiftc -o exemplo exemplo.swift
+```
+
+Se não houver nenhum errinho na hora de compilar, ele não dará nenhum retorno de texto na tela, simplesmente voltará para o prompt *$*.
+
+O próximo passo é executar seu código, para isso, digite:
+
+```sh
+$ ./exemplo
+```
+
+*Sugestão: no link "The Swift Programming Language" você encontra a documentação oficial do Swift. Que tal dar uma olhada e explorar ainda mais essa linguagem? ;)*
+
 ## Links Interessantes
 
 - Oracle VM VirtualBox User Manual - https://www.virtualbox.org/manual/ 
