@@ -117,7 +117,7 @@ O resultado que você deve obter na tela é algo parecido com isso:
 ```sh
 Swift version 4.2.3 (swift-4.2.3-RELEASE)
 Target: x86_64-unknown-linux-gnu
-``
+```
 
 ## Links Interessantes
 
