@@ -47,9 +47,15 @@ Na sua janela do terminal, você pode ver que o último caractere da linha é o 
 Então, na sua janela do terminal, digite o comando abaixo:
 
 ```sh
-$ sudo apt-get install clang libicu-dev -y
+$ sudo apt-get install clang
 ```
 Será necessário digitar a sua senha, a mesma que você utilizou para logar-se no Ubuntu. Faça isso e dê Enter. Os arquivos serão baixados e instalados, pode levar um tempinho.
+
+Em seguida, digite o comando:
+
+```sh
+$ sudo apt-get install libcurl3 libpython2.7 libpython2.7-dev 
+```
 
 O próximo comando é para fazer o download do pacote do Swift (aprox. 220 MB): 
 ```sh
@@ -64,21 +70,54 @@ $ ls
 
 Este comando mostra todos os arquivos existentes no diretório que você se encontra. Um dos arquivos mostrados deve ser o **swift-4.2.3-RELEASE-ubuntu18.04.tar.gz** :)
 
-Agora precisamos extrair o conteúdo do pacote. Para isso, vamos criar um diretório chamado "swift" e vamos extrair o pacote para dentro dele.
+Agora precisamos extrair o conteúdo do pacote. 
 
-O primeiro comando a ser utilizado é:
-
-```sh
-$ mkdir ~/swift
-```
-
-Se você digitar novamente o comando **ls** após a criação do diretório, vai ver que além do que apareceu anteriormente, há uma pasta "swift" ;)
-
-O próximo comando vai descompactar o conteúdo do pacote para dentro do diretório "swift":
+Para isso, utilize o seguinte comando:
 
 ```sh
-$ tar -xvzf swift-4.2.3-RELEASE-ubuntu18.04.tar.gz -C ~/swift
+$ tar xzf swift-4.2.3-RELEASE-ubuntu18.04.tar.gz
 ```
+
+Se você digitar novamente o comando **ls** após a extração do pacote, vai ver que além do que apareceu anteriormente, há uma pasta "swift-4.2.3-RELEASE-ubuntu18.04" ;)
+
+Vamos navegar até o diretório "bin" do pacote. Faremos isso com os seguinte comandos:
+
+```sh
+$ cd swift-4.2.3-RELEASE-ubuntu18.04
+```
+
+Em seguida: 
+
+```sh
+$ cd usr/bin
+```
+
+Agora precisamos obter o caminho completo deste diretório. Faremos isso com o seguinte comando:
+
+```sh
+$ pwd
+```
+
+O resultado que aparecerá para você deve ser algo do tipo **/home/SEU_NOME_DE_USUÁRIO/swift-4.2.3-RELEASE-ubuntu18.04/usr/bin**. Por exemplo, como o nome de usuário que escolhi na minha instalação foi "erika", meu caminho ficará */home/erika/swift-4.2.3-RELEASE-ubuntu18.04/usr/bin*.
+
+Digite o seguinte comando:
+
+```sh
+$ export PATH=/home/SEU_NOME_DE_USUÁRIO/swift-4.2.3-RELEASE-ubuntu18.04/usr/bin:"${PATH}"
+```
+
+E, por fim, para saber se o Swift foi instalado corretamente, digite o comando:
+
+```sh
+$ swift --version
+```
+
+O resultado que você deve obter na tela é algo parecido com isso:
+
+```sh
+Swift version 4.2.3 (swift-4.2.3-RELEASE)
+Target: x86_64-unknown-linux-gnu
+``
 
 ## Links Interessantes
 
