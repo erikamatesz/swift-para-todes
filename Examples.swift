@@ -1,4 +1,4 @@
-# 1
+// 1
 
 let results = ["rock", "paper", "scissors", "lizard", "spock"]
 
