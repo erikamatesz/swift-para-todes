@@ -54,7 +54,7 @@ Será necessário digitar a sua senha, a mesma que você utilizou para logar-se 
 Em seguida, digite o comando:
 
 ```sh
-$ sudo apt-get install libcurl3 libpython2.7 libpython2.7-dev 
+$ sudo apt-get install libcurl3 libcurl4 libpython2.7 libpython2.7-dev 
 ```
 
 O próximo comando é para fazer o download do pacote do Swift (aprox. 220 MB): 
