@@ -178,7 +178,7 @@ Salve e compile o arquivo. Depois disso, digite o seguinte comando para rodá-lo
 $ ./SayHelloTo Erika
 ```
 
-No lugar de "Erika", digite o seu nome. E aí, o que acontece? :)
+No lugar de "Erika", digite o seu nome. E aí, o que aconteceu? :)
 
 *Sugestão: no link "The Swift Programming Language" você encontra a documentação oficial do Swift. Que tal dar uma olhada e explorar ainda mais essa linguagem? ;)*
 
