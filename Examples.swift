@@ -1,3 +1,8 @@
+// Exemplos para você utilizar no GNU nano e depois compilar seu arquivo .swift :)
+// Na primeira linha, não esqueça de colocar a linha abaixo:
+// import Foundation
+//
+
 // 1
 
 print("Hello World")
@@ -24,3 +29,11 @@ func play() {
 }
 
 play()
+
+// 4
+// Para ler valores passados na linha de comando
+
+let firstArg = CommandLine.arguments[1]
+print(firstArg)
+
+
