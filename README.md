@@ -149,13 +149,7 @@ $ nano exemplo.swift
 
 Este comando criará o arquivo *exemplo.swift* no diretório atual e também abrirá o editor **GNU nano**. Nele, podemos escrever o código em Swift para depois compilar :)
 
-Na janela do nano, você digita o código (veja os exemplos neste repositório). Não esqueça de colocar na primeira linha do arquivo:
-
-```swift
-import Foundation
-```
-
-Quando terminar, tecle CTRL + X para sair. Como você fez alterações no arquivo, ele perguntará se você deseja salvar antes de sair. Basta digitar Y. Ele confirmará o nome do arquivo e é só pressionar Enter.
+Na janela do nano, você digita o código (veja os exemplos neste repositório). Quando terminar, tecle CTRL + X para sair. Como você fez alterações no arquivo, ele perguntará se você deseja salvar antes de sair. Basta digitar Y. Ele confirmará o nome do arquivo e é só pressionar Enter.
 
 Para compilar seu arquivo, utilize o seguinte comando:
 
@@ -170,6 +164,21 @@ O próximo passo é executar seu código, para isso, digite:
 ```sh
 $ ./exemplo
 ```
+
+Por fim, vamos ler parâmetros através da linha de comando para processar no código. Crie um arquivo chamado *SayHelloTo.swift* com o comando ensinado acima. Dentro dele, coloque as seguintes linhas:
+
+```swift
+let name = CommandLine.arguments[1]
+print("Hello, " + name)
+```
+
+Salve e compile o arquivo. Depois disso, digite o seguinte comando para rodá-lo:
+
+```sh
+$ ./SayHelloTo Erika
+```
+
+No lugar de "Erika", digite o seu nome. E aí, o que acontece? :)
 
 *Sugestão: no link "The Swift Programming Language" você encontra a documentação oficial do Swift. Que tal dar uma olhada e explorar ainda mais essa linguagem? ;)*
 
