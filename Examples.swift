@@ -29,3 +29,11 @@ func play() {
 }
 
 play()
+
+// 4
+// Para ler valores passados na linha de comando
+
+let firstArg = CommandLine.arguments[1]
+print(firstArg)
+
+
