@@ -149,7 +149,13 @@ $ nano exemplo.swift
 
 Este comando criará o arquivo *exemplo.swift* no diretório atual e também abrirá o editor **GNU nano**. Nele, podemos escrever o código em Swift para depois compilar :)
 
-Na janela do nano, você digita o código (veja os exemplos neste repositório) e, quando terminar, tecle CTRL + X para sair. Como você fez alterações no arquivo, ele perguntará se você deseja salvar antes de sair. Basta digitar Y. Ele confirmará o nome do arquivo e é só pressionar Enter.
+Na janela do nano, você digita o código (veja os exemplos neste repositório). Não esqueça de colocar na primeira linha do arquivo:
+
+```swift
+import Foundation
+```
+
+Quando terminar, tecle CTRL + X para sair. Como você fez alterações no arquivo, ele perguntará se você deseja salvar antes de sair. Basta digitar Y. Ele confirmará o nome do arquivo e é só pressionar Enter.
 
 Para compilar seu arquivo, utilize o seguinte comando:
 
